@@ -1,0 +1,1 @@
+ALTER TABLE "models_pricing" ADD CONSTRAINT "models_pricing_model_unique" UNIQUE("model");

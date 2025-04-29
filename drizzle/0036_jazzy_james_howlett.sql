@@ -1,0 +1,2 @@
+ALTER TABLE "attachments" RENAME COLUMN "name" TO "file_name";--> statement-breakpoint
+ALTER TABLE "accounts" ALTER COLUMN "avatar_url" SET DEFAULT 'https://zzpjgqoarfqxohaylkvr.supabase.co/storage/v1/object/public/Public_assets/images/user-svgrepo-com.png';

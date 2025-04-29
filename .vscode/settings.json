@@ -1,0 +1,19 @@
+{
+    "cSpell.words": [
+        "coldark",
+        "nuqs",
+        "rtai",
+        "Tajawal",
+        "TURUSTILE",
+        "التوكنات",
+        "الحجم"
+    ],
+    "i18n-ally.localesPaths": [
+        "messages",
+        "src/i18n",
+        "public/ckeditor/lang",
+        "public/ckeditor/plugins/a11yhelp/dialogs/lang",
+        "public/ckeditor/plugins/specialchar/dialogs/lang"
+    ],
+    "i18n-ally.keystyle": "nested"
+}

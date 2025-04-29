@@ -1,0 +1,1 @@
+ALTER TABLE "subscribers" ALTER COLUMN "credits" SET DEFAULT '0.1875';

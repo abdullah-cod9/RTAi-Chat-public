@@ -1,0 +1,1 @@
+ALTER TABLE "subscribers" RENAME COLUMN "expires_at" TO "next_billing_date";

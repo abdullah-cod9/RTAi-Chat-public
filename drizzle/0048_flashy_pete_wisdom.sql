@@ -1,0 +1,5 @@
+ALTER TABLE "chat_folders" ENABLE ROW LEVEL SECURITY;--> statement-breakpoint
+CREATE POLICY "Enable insert for users based on userId" ON "chat_folders" AS RESTRICTIVE FOR INSERT TO "authenticated" WITH CHECK ((select auth.uid()) = chat_folders.added_by);--> statement-breakpoint
+CREATE POLICY "Enable update for users based on userId" ON "chat_folders" AS RESTRICTIVE FOR UPDATE TO "authenticated" USING ((select auth.uid()) = id) WITH CHECK ((select auth.uid()) = chat_folders.added_by);--> statement-breakpoint
+CREATE POLICY "Enable delete for users based on userId" ON "chat_folders" AS RESTRICTIVE FOR DELETE TO "authenticated" USING ((select auth.uid()) = chat_folders.added_by);--> statement-breakpoint
+CREATE POLICY "Enable select for users based on userId" ON "chat_folders" AS RESTRICTIVE FOR SELECT TO "authenticated" USING ((select auth.uid()) = chat_folders.added_by);

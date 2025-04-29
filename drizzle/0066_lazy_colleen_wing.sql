@@ -1,0 +1,3 @@
+ALTER TABLE "subscribers" ADD COLUMN "features_Plan" jsonb DEFAULT '{"isActive":true,"autoRenew":false,"realTime":false,"knowledgeBase":true,"attachments":true,"support":true,"accessModels":["gpt-4o-mini","gpt-4.1-nano","gpt-image-1"],"maxGroupMembers":4,"maxDocumentUploads":3,"imageGenerations":1,"fileUploads":10,"maxUploadsPerSession":3}'::jsonb NOT NULL;--> statement-breakpoint
+ALTER TABLE "subscribers" DROP COLUMN "auto_renew";--> statement-breakpoint
+ALTER TABLE "subscribers" DROP COLUMN "is_active";

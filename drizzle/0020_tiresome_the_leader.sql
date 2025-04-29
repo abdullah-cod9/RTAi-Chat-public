@@ -1,0 +1,2 @@
+CREATE INDEX "attachments_id_idx" ON "embedding_doc" USING btree ("attachments_id");--> statement-breakpoint
+CREATE INDEX "embeddingIndex" ON "embedding_doc" USING hnsw ("embedding" vector_cosine_ops);

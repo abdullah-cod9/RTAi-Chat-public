@@ -1,0 +1,579 @@
+{
+  "HomePage": {
+    "title": "Hello world!",
+    "about": "Go to the about page"
+  },
+  "checkout": {
+    "countrySelect": {
+      "commandEmpty": "No country found."
+    },
+    "checkoutForm": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "country": "Country",
+      "addressLine": "Street Address",
+      "city": "City",
+      "state": "State",
+      "zipCode": "Zipcode",
+      "submit": {
+        "processing": "Processing...",
+        "continue": "Continue to Payment"
+      },
+      "countryPlaceholder": "Please select a country"
+    }
+  },
+  "Chat": {
+    "chatSetting": {
+      "title": "Chat setting",
+      "responseLanguage": {
+        "title": "Response Language:",
+        "option": "{option, select, auto {Response language auto} afrikaans {Afrikaans} albanian {Albanian} amharic {Amharic} arabic {Arabic} armenian {Armenian} azerbaijani {Azerbaijani} belarusian {Belarusian} bengali {Bengali} bosnian {Bosnian} bulgarian {Bulgarian} chinese {Chinese} croatian {Croatian} czech {Czech} danish {Danish} dutch {Dutch} english {English} estonian {Estonian} finnish {Finnish} french {French} georgian {Georgian} german {German} greek {Greek} gujarati {Gujarati} hebrew {Hebrew} hindi {Hindi} hungarian {Hungarian} icelandic {Icelandic} indonesian {Indonesian} irish {Irish} italian {Italian} japanese {Japanese} javanese {Javanese} kazakh {Kazakh} korean {Korean} kurdish {Kurdish} kyrgyz {Kyrgyz} lao {Lao} latin {Latin} latvian {Latvian} lithuanian {Lithuanian} luxembourgish {Luxembourgish} macedonian {Macedonian} malagasy {Malagasy} malay {Malay} malayalam {Malayalam} maltese {Maltese} mongolian {Mongolian} nepali {Nepali} norwegian {Norwegian} odia {Odia} pashto {Pashto} persian {Persian} polish {Polish} portuguese {Portuguese} punjabi {Punjabi} romanian {Romanian} russian {Russian} samoan {Samoan} serbian {Serbian} shona {Shona} sindhi {Sindhi} slovak {Slovak} slovenian {Slovenian} somali {Somali} spanish {Spanish} sundanese {Sundanese} swahili {Swahili} swedish {Swedish} tajik {Tajik} tamil {Tamil} telugu {Telugu} thai {Thai} turkish {Turkish} ukrainian {Ukrainian} urdu {Urdu} uzbek {Uzbek} vietnamese {Vietnamese} xhosa {Xhosa} yoruba {Yoruba} zulu {Zulu} other {Unknown}}",
+        "inputPlaceholder": "Search for a language...",
+        "commandEmptyTitle": "No language found."
+      },
+      "ChatWith": {
+        "title": "Chat With:",
+        "option": "{option, select, ai {chat with Ai} friend {Chat with members} other {Unknown}}"
+      },
+      "KnowledgeBase": {
+        "title": "Knowledge base",
+        "description": "Specify the model`s sources for accurate, reliable responses.",
+        "tip1": {
+          "m1": "RAG: select documents and return to the chat.",
+          "m2": "CAG: select documents and click the download button, then return to the chat."
+        },
+        "tip2": {
+          "tip1": "Download selected documents",
+          "tip2": "Select all",
+          "tip3": "Clear selected"
+        },
+        "commandInput": {
+          "placeholder": "Search your documents..."
+        },
+        "CommandEmpty": {
+          "m1": "No matching documents found.",
+          "m2": "You don’t have any documents yet."
+        },
+        "toast1": "You cannot select more than {doc} documents",
+        "RAG or CAG": {
+          "title": "RAG or CAG ?",
+          "description": {
+            "m1": "RAG: Sends only relevant parts of your documents. It`s cost-efficient and dynamic, but may be slightly slower due to retrieval time.",
+            "m2": "CAG: Sends the full document content. It`s faster at response time but more expensive and limited by the model`s context window.",
+            "m3": "For large document sets, RAG is ideal. In some cases, combining both gives the best results."
+          },
+          "button": "Hide"
+        }
+      }
+    },
+    "chatUi": {
+      "header": {
+        "header": {
+          "tooltips": {
+            "optimizeMessage": "Optimize message",
+            "pasteLastMessage": "Paste last message"
+          }
+        },
+        "ViewUploadedAtt": {
+          "title": "Analyze images and extract text from files."
+        },
+        "reasoningEffort": {
+          "title": "Reasoning effort",
+          "effort": "{effort, select, low {Low} medium {Medium} high {High} other {Unknown feature}}"
+        },
+        "footer": {
+          "chatSetting": {
+            "title": "Chat setting"
+          },
+          "selectModel": {
+            "tooltips": "{tip, select, supports_image_analysis {Supports image and text file analysis} supports_rag {Supports Retrieval-Augmented Generation (RAG)} reasoning {Reasoning and problem-solving capabilities} other {Unknown feature}}"
+          },
+          "selectImageDimensions": {
+            "title": "Select image dimensions"
+          },
+          "selectImageQuality": {
+            "title": "Select image quality",
+            "quality": "{quality, select, low {Low} medium {Medium} high {High} other {Unknown feature}}"
+          }
+        }
+      }
+    },
+    "messageUi": {
+      "reasoningText": {
+        "title": "Reasoning"
+      }
+    },
+
+    "messageList": {
+      "ai_is_generating": "Ai is generating a message..."
+    },
+    "settings": {
+      "title": "Settings",
+      "Header": {
+        "general": "General",
+        "subscription": "Subscription",
+        "account": "Account",
+        "contact": "Contact Us"
+      },
+      "general": {
+        "title": "General",
+        "theme": {
+          "title": "Theme",
+          "option": "{option, select, light {Light} dark {Dark} system {System} other {Unknown}}"
+        },
+        "language": {
+          "title": "language",
+          "option": "{option, select, auto {Auto} ar {Arabic} en {English} other {Unknown}}"
+        },
+        "LogOut": {
+          "title": "Log out",
+          "button": "Sign out"
+        },
+        "delete_all_chats": "Delete all chats",
+        "DeleteAllChats": {
+          "title": "Delete all chats",
+          "toast_error": "All messages have been successfully deleted.",
+          "trigger_deleting": "Deleting...",
+          "trigger_confirm": "Delete all",
+          "confirm": "Confirm Deletion",
+          "description_1": "This action will permanently remove all your chats from our servers.",
+          "description_2": "This cannot be undone.",
+          "description_3": "Are you sure you want to proceed?",
+          "action_confirm": "Yes, delete all"
+        },
+        "tokens": {
+          "title": "Tokens",
+          "expires": "Expires on: {date}",
+          "resets": "Resets tomorrow at 3:00 AM"
+        },
+        "shortcuts": {
+          "title": "Keyboard Shortcuts",
+          "search": "Search",
+          "toggleSidebar": "Toggle Sidebar",
+          "newChat": "New Chat",
+          "toggleSetting": "Toggle Setting",
+          "userId": "User ID"
+        },
+        "RemainingCredits": {
+          "creditsStatus": {
+            "loading": {
+              "title": "Remaining tokens:"
+            },
+            "error": {
+              "message": "Unexpected error occurred. Try again.",
+              "retry": "Refetch"
+            },
+            "success": {
+              "title": "Remaining tokens:"
+            }
+          }
+        }
+      },
+      "Account": {
+        "title": "Account",
+        "UserId": "User ID",
+        "username": "Username",
+        "email": "Email",
+        "deleteAccount": "Delete account",
+        "delete": {
+          "buttonTitle": "Delete",
+          "dialogTitle": "Delete Account",
+          "description_1": "Deleting your account will permanently revoke access to SmartTools services, including AI tools.",
+          "description_2": "If your account is subscribed, deleting it will result in the loss of your active subscriptions.",
+          "description_3": "If you have any questions or concerns, feel free to contact us via email at {email}.",
+          "description_4": "Are you absolutely sure you want to delete your account? This action cannot be undone.",
+          "description_5": "To confirm, please type DELETE in the field below:",
+          "inputPlaceholder": "Type DELETE to confirm",
+          "dialogCancelButton": "Cancel",
+          "dialogConfirmButton": "Confirm Deletion"
+        }
+      },
+      "Contact": {
+        "toast_successfully_sent": "Your message has been successfully sent! We will get back to you as soon as possible.",
+        "title": "Let us know how we can help!",
+        "username": "Username",
+        "email": "Email",
+        "message": "Message",
+        "contact_about": "Contact us about",
+        "option_feature": "I have a question or feature idea",
+        "option_bug": "I found a bug",
+        "option_billing": "I'm having account or subscription. issues",
+        "submit": "Submit"
+      },
+      "Subscription": {
+        "title": "Subscription",
+        "pricing": {
+          "plusPlan": {
+            "title": "Upgrade to Plus",
+            "price": "$9.99",
+            "perMonth": "/ month",
+            "features": {
+              "messages": {
+                "title": "1,500+ messages per month",
+                "description": "Includes support for up to 100 image generations, depending on your token balance. Actual usage may vary based on the model and content size."
+              },
+              "models": {
+                "title": "Access to all models",
+                "description": "Enjoy GPT-4o, GPT-4o-mini, and 3o-mini — with more models coming soon!"
+              },
+              "realtime": {
+                "title": "Real-time chat with up to 8 members.",
+                "description": "Collaborate instantly with members and AI in the same conversation."
+              },
+              "attachments": {
+                "title": "Attachment support",
+                "description": "Includes RAG & CAG support with up to 50 document uploads"
+              },
+              "support": {
+                "title": "Priority Support",
+                "description": "Get faster responses and personalized, priority support whenever you need it"
+              }
+            },
+            "cta": {
+              "upgradeNow": "Upgrade Now",
+              "stop_auto_renewal": "Stop auto renewal",
+              "renewal_now": "Subscription renewal"
+            }
+          }
+        }
+      }
+    },
+    "sidebar": {
+      "header": {
+        "createFolder": {
+          "title": "Create new folder",
+          "trigger": "Create folder",
+          "triggerClose": "Close",
+          "description": {
+            "folderNameLabel": "Folder name",
+            "placeholder": "Study chemistry",
+            "createButton": "Create"
+          }
+        },
+        "search": {
+          "trigger": "Search",
+          "triggerClose": "Close",
+          "placeholder": "search...",
+          "noResults": "No results found."
+        }
+      },
+      "content": {
+        "timing": {
+          "option": "{option, select, today {Today} yesterday {Yesterday} last_7_days {Last 7 Days} last_30_days {Last 30 Days} older {Older} other {Unknown}}"
+        },
+        "dropdownMenu": {
+          "addFriend": {
+            "title": "Add a member to Chat",
+            "trigger": "Add member",
+            "close": "Close",
+            "description": "Enter the User ID of the member you want to add to this chat.",
+            "onlyAdminNote": "Only the chat admin can add new members.",
+            "form": {
+              "label": "User Id",
+              "placeholder": "eb515dec-****-4bf2-****-5e6d43bcb064",
+              "submit": "Add"
+            }
+          },
+          "createNewChat": {
+            "title": "Create new chat",
+            "trigger": "Create chat",
+            "tooltip": "New chat",
+            "close": "Close",
+            "description": "Add new chat in",
+            "form": {
+              "label": "Chat name",
+              "placeholder": "Study chemistry",
+              "submit": "Create"
+            }
+          },
+          "deleteChat": {
+            "trigger": "Delete chat",
+            "title": "Delete {chatName}",
+            "description": {
+              "m1": "Are you sure you want to delete",
+              "m2": "? This action cannot be undone."
+            },
+            "confirm": "Yes, Delete"
+          },
+          "deleteFolder": {
+            "trigger": "Delete folder",
+            "title": "Delete {folderName}",
+            "description": {
+              "m1": "Are you sure you want to delete the folder",
+              "m2": "along with its",
+              "m3": "chat",
+              "m4": "? This action cannot be undone."
+            },
+            "confirm": "Yes, Delete"
+          },
+          "downloadChatHistory": {
+            "toast_error": "Failed to generate the PDF.",
+            "button": {
+              "m1": "Check history",
+              "m2": "Download chat history"
+            }
+          },
+          "groupMembers": {
+            "toast_success": "member has been removed successfully.",
+            "toast_error": "An error occurred while removing the member. Please try again.",
+            "title": "Members",
+            "triggerClose": "Close",
+            "status": {
+              "error": "An unexpected error occurred",
+              "refetch": "Refetch",
+              "privateChat": "Private chat"
+            },
+            "removeMember": {
+              "title": "Remove member from group",
+              "description": {
+                "m1": "Remove ",
+                "m2": " from the group? This will also delete all their messages, including AI-generated ones."
+              },
+              "action": "Remove Member"
+            }
+          },
+          "rename": {
+            "toast_success": "Name changed successfully",
+            "title": "Rename {currentName}",
+            "trigger": "Rename",
+            "triggerClose": "Close",
+            "description": {
+              "nameLabel": "Name",
+              "changeButton": "Change"
+            }
+          }
+        }
+      }
+    },
+    "toolsContainer": {
+      "title": "Tools",
+      "editor": "Simple text editor",
+      "deleteAttachment": {
+        "trigger": "Delete selected",
+        "title": "Confirm Attachment Deletion",
+        "description": {
+          "m1": "This action cannot be undone. Once deleted, the attachments will be permanently removed. Are you sure you want to proceed?"
+        },
+        "action": "Yes, Delete"
+      },
+      "documents": {
+        "trigger": "View Documents",
+        "triggerClose": "Close",
+        "title": "Your Documents",
+        "description": {
+          "hasDocuments": "Ready to dive in? Let’s study smarter, not harder.",
+          "noDocuments": "You don’t have any documents yet. Upload them in the knowledge base and let AI help you study better.",
+          "searchPlaceholder": "Search your documents...",
+          "noMatchingDocuments": "No matching documents found.",
+          "noDocumentsYet": "You don’t have any documents yet."
+        }
+      }
+    },
+    "newChat": {
+      "agreementMessage": {
+        "message": "By sending your message, you agree to our",
+        "terms": "terms, acceptable use,",
+        "and": "and",
+        "privacyPolicy": "privacy policy."
+      },
+      "accordionNewChat": {
+        "item1": {
+          "trigger": "Can I collaborate with others in real-time?",
+          "content": "Absolutely! Invite your friends or teammates and chat together in real-time. Brainstorm ideas, solve problems, or just have fun — all in one shared conversation with AI. (Real-time for plus plan only)"
+        },
+        "item2": {
+          "trigger": "Are there more AI models?",
+          "content": "Yes! We’ve started with OpenAI models like GPT-4o, GPT-4o-mini, and 3o-mini — and we're actively working on adding more models from OpenAI and other providers. Stay tuned!"
+        },
+        "item3": {
+          "trigger": "Can I upload attachments?",
+          "content": "Yes! We support a wide range of file formats, including: PDF, PNG, SVG, JPEG, JPG, DOCX, PPTX, XLSX, and TXT."
+        },
+        "item4": {
+          "trigger": "Is it affordable?",
+          "content": "Definitely! Just $9.99/month. Our flexible token system adapts to your usage — lighter models give you over 1,500 messages per month, while heavier models use more tokens."
+        },
+        "footer": "🚀 Ready to try it out? Send your first message or check out our FAQ chat for more!"
+      }
+    },
+    "jodit": {
+      "exportPdfButton": {
+        "download": "Download"
+      },
+      "statusList": {
+        "commandInput": "Filter...",
+        "commandEmpty": "No results found."
+      },
+      "dropdownTextarea": {
+        "write": "Write your prompt",
+        "save": "Save"
+      }
+    }
+  },
+  "Auth": {
+    "authSchema": {
+      "username": {
+        "title": "User name",
+        "message": "Username must be at least 2 characters long."
+      },
+      "email": {
+        "title": "Email",
+        "message": "Invalid email address."
+      },
+      "password": {
+        "title": "Password",
+        "message1": "Password must be at least 8 characters long.",
+        "message2": "Password must contain at least one lowercase letter.",
+        "message3": "Password must contain at least one uppercase letter.",
+        "message4": "Password must contain at least one digit.",
+        "message5": "Password must contain at least one special character."
+      },
+      "confirmPassword": {
+        "title": "Confirm password",
+        "message": "Passwords do not match."
+      }
+    },
+    "Signup": {
+      "title": "Sign up",
+      "home": "Home",
+      "Login": {
+        "m1": "Already have an account?",
+        "m2": "Log in."
+      },
+      "username": {
+        "title": "User name",
+        "placeholder": "Name"
+      },
+      "email": {
+        "title": "Email",
+        "placeholder": "ai.chat@example.com"
+      },
+      "password": {
+        "title": "Password"
+      },
+      "confirmPassword": {
+        "title": "Confirm password"
+      },
+      "button": "Create account",
+      "or": "OR",
+      "oAuthGoogle": "Sign up with Google",
+      "resetPassword": "Forgot your password?",
+      "privacyPolicy": {
+        "m1": "By signing up, you agree to our",
+        "m2": "terms, acceptable use,",
+        "m3": "and",
+        "m4": "privacy policy."
+      }
+    },
+    "Login": {
+      "title": "Sign up",
+      "home": "Home",
+      "Signup": {
+        "m1": "Don't have an account?",
+        "m2": "Sign up"
+      },
+      "username": {
+        "title": "User name",
+        "placeholder": "Name"
+      },
+      "email": {
+        "title": "Email",
+        "placeholder": "ai.chat@example.com"
+      },
+      "password": {
+        "title": "Password"
+      },
+      "confirmPassword": {
+        "title": "Confirm password"
+      },
+      "button": "Login",
+      "or": "OR",
+      "oAuthGoogle": "Sign up with Google",
+      "resetPassword": "Forgot your password?",
+      "privacyPolicy": {
+        "m1": "By signing up, you agree to our",
+        "m2": "terms, acceptable use,",
+        "m3": "and",
+        "m4": "privacy policy."
+      }
+    },
+    "action": {
+      "successSignUp": "Please check your email to confirm your account.",
+      "successResetPassword": "Please check your email to reset your password.",
+      "successUpdatePassword": "The password has been changed successfully",
+      "unexpectedError": "An unexpected error occurred."
+    },
+    "ResetPassword": {
+      "home": "Home",
+      "resetYourPassword": "Reset your password",
+      "email": {
+        "title": "Email",
+        "placeholder": "ai.chat@example.com"
+      },
+      "button": "Send"
+    },
+    "UpdatePassword": {
+      "home": "Home",
+      "password": {
+        "title": "Password"
+      },
+      "confirmPassword": {
+        "title": "Confirm password",
+        "message": "Passwords do not match."
+      },
+      "button": "Change password"
+    },
+    "ErrorPage": {
+      "home": "Home",
+      "support": "Support"
+    },
+    "DeleteAccount": {
+      "title": "Delete",
+      "dialogTitle": "Are you sure?",
+      "description": {
+        "m1": "Your account and all associated data will be permanently deleted. This includes:",
+        "m2": "All your private chats",
+        "m3": "All public chats",
+        "m4": "that you created",
+        "m5": "All messages and conversation history",
+        "m6": "All uploaded files and attachments",
+        "m7": "This action cannot be undone. Please confirm your decision."
+      },
+      "action": "Yes, delete everything"
+    },
+    "loginNow": {
+      "message": "Login to unlock more features and increase your usage limits!",
+      "button": "Login new"
+    },
+    "UpgradeNow": {
+      "message": "Unlock all models, real-time chats, and higher limits — all features included!",
+      "button": "Upgrade"
+    }
+  },
+  "TurnstileValidation": {
+    "m1": "Verifying that you're human. This will only take a few seconds...",
+    "m2": "For your safety,",
+    "m3": "rtai.chat",
+    "m4": "is reviewing the security of your connection before continuing."
+  },
+  "errorPage": {
+    "unexpectedError": "An unexpected error occurred.",
+    "home": "Home",
+    "support": "Support"
+  },
+  "notFoundPage": {
+    "title": "404 - Page Not Found",
+    "message": "Sorry, the page you're looking for doesn't exist or has been moved.",
+    "backButton": "Back to Home"
+  },
+  "components": {
+    "error": {
+      "message": "An unexpected error occurred.",
+      "refetchButton": "Refetch"
+    },
+    "alertDialogButton": {
+      "cancel": "Cancel"
+    }
+  }
+}

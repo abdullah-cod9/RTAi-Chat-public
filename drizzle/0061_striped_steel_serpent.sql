@@ -1,0 +1,4 @@
+ALTER POLICY "Enable insert for users based on userId" ON "accounts" TO authenticated WITH CHECK ((select auth.uid()) = accounts.id );--> statement-breakpoint
+ALTER POLICY "Enable update for users based on userId" ON "accounts" TO authenticated USING ((select auth.uid()) = id) WITH CHECK ((select auth.uid()) = accounts.id );--> statement-breakpoint
+ALTER POLICY "Enable delete for users based on userId" ON "accounts" TO authenticated USING ((select auth.uid()) = accounts.id );--> statement-breakpoint
+ALTER POLICY "Enable select for users based on userId" ON "accounts" TO authenticated USING ((select auth.uid()) = accounts.id );

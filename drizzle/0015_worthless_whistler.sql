@@ -1,0 +1,1 @@
+ALTER TYPE "public"."file_enum" ADD VALUE 'docx';

@@ -1,0 +1,2 @@
+ALTER TABLE "subscribers" ALTER COLUMN "features_Plan" SET DEFAULT '{"isActive":true,"autoRenew":false,"realTime":false,"knowledgeBase":true,"attachments":true,"support":true,"accessModels":["gpt-4o-mini","gpt-4.1-nano"],"maxGroupMembers":4,"maxDocumentUploads":3,"imageGenerations":0,"fileUploads":10,"maxUploadsPerSession":3}'::jsonb;--> statement-breakpoint
+CREATE POLICY "Allow select for authenticated" ON "chat_group" AS PERMISSIVE FOR SELECT TO "authenticated" USING (true);

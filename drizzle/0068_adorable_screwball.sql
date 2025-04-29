@@ -1,0 +1,1 @@
+DROP POLICY "Enable insert for users based on userId" ON "chat_group" CASCADE;
