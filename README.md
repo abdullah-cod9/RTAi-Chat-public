@@ -6,7 +6,7 @@ I spent months learning, building, breaking, and rebuilding the platform. As a r
 
 ---
 
-## 🚀 Try It Live(Not working)
+## 🚀 Try It Live
 
 🧪 Test the site: [https://rtai.chat/chat](https://rtai.chat/chat)
 
